@@ -25,6 +25,7 @@ A CIDR block consists of two components:
     2. Subnet Mask: Defines how many bits can change in the IP
 
 I chose 10.0.0.0/16 which gave my VPC 65'536 different IP-Addresses
+
 ![alt text](../Images/VPC_Settings.png)
 
 -> Finally, click “Create VPC” 
@@ -64,27 +65,33 @@ Public Route Table:
 - Route: 0.0.0.0/0 → Target: Internet Gateway (IGW)
 - This allows all outbound traffic from the public subnet to reach the Internet.
 - Subnet Association: public-subnet-01
+
 ![alt text](../Images/Edit_Public_Route_Table.png)
 
 Private Route Table:
 - Route: 0.0.0.0/0 → Target: NAT Gateway
 - Purpose: Enables instances in the private subnet to access the Internet (e.g. for updates) while remaining isolated from inbound traffic.
 - Subnet Association: private-subnet-01
+
 ![alt text](../Images/Edit_Private_Route_Table.png)
 
 ### Create EC2 Instances 
 I deployed two EC2 instances:
 
 - Public EC2: Placed in the public subnet with a public IP to allow direct Internet access.
+
 ![alt text](../Images/Public_Network_Settings.png)
 
 - Security Group: Only allows SSH and HTTPS access from your own IP address for security. This ensures no one else can directly SSH into the instance.
+
 ![alt text](../Images/Public_SG.png)
 
 - Private EC2: Placed in the private subnet without a public IP, accessing the Internet only via the NAT Gateway.
+
 ![alt text](../Images/Private_Network_Settings.png)
 
 - Security Group: Only allows SSH traffic from my IP to keep the private instance isolated from the Internet. 
+
 ![alt text](../Images/Private_SG.png)
 
 ## Result
