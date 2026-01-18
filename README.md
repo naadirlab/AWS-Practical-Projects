@@ -5,16 +5,15 @@ The idea was to actually try things out and see how different AWS services work 
 
 # Repository Structure
 
-AWS-Practical-Projects
-1 - Custom VPC Architecture
-    README.md
-2 - Application Load Balancer & Multi-AZ EC2
-    README.md
-3 - Static Website on AWS (S3 + CloudFront + Route53)
-    README.md
-Images
-    (screenshots for all projects)
-README.md 
+- 1 - Custom VPC Architecture
+    - README.md
+- 2 - Application Load Balancer & Multi-AZ EC2
+    - README.md
+- 3 - Static Website on AWS (S3 + CloudFront + Route53)
+    - README.md
+- Images
+    - (screenshots for all projects)
+- README.md 
 
 ## What I Built
 
@@ -23,13 +22,13 @@ README.md
 A custom AWS VPC built from scratch to understand core networking concepts.
 
 Key components:
-	•	Custom VPC with CIDR 10.0.0.0/16
-	•	Public and private subnets
-	•	Internet Gateway for public access
-	•	NAT Gateway for outbound internet access from private instances
-	•	Separate route tables for public and private traffic
-	•	EC2 instances in public and private subnets
-	•	Security groups with restricted access
+- Custom VPC with CIDR 10.0.0.0/16
+- Public and private subnets
+- Internet Gateway for public access
+- NAT Gateway for outbound internet access from private instances
+- Separate route tables for public and private traffic
+- EC2 instances in public and private subnets
+- Security groups with restricted access
 
 
 ### 2. Application Load Balancer & Multi-AZ EC2
