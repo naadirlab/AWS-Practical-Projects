@@ -1,6 +1,6 @@
 # AWS Networking & Infrastructure Projects
 
-This repo has three small AWS projects I built while learning networking, high availability, and hosting.
+This repo contains an AWS project divided into 3 parts, which I built while learning networking, high availability, and hosting.
 The idea was to actually try things out and see how different AWS services work together in practice.
 
 # Repository Structure

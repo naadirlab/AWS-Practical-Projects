@@ -2,6 +2,7 @@
 
 ## Overview
 In this part, I created a simple static website on AWS using S3 and CloudFront.
+
 I learned how to host files publicly in S3, manage access with bucket policies, and improve performance and security by serving content through a CloudFront CDN with HTTPS.
 
 ## Steps

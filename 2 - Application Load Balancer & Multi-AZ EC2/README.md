@@ -2,6 +2,7 @@
 
 ## Overview
 I expaned my project by deploying multiple EC2 instances behind an Application Load Balancer (ALB) to handle incoming traffic efficiently, and also explored routing traffic using a Route53 DNS alias.
+
 The goal was to understand load balancing, health checks, and secure access patterns in AWS.
 
 ## Steps 
